@@ -49,6 +49,18 @@ const changeHeader = () => {
 
 window.addEventListener('scroll', changeHeader);
 
+let testimonialSwiper = new Swiper('.testimonial-swiper', {
+  spaceBetween: 30,
+  loop: 'true',
+  autoplay: {
+    delay: 5000,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
 // let stepsSwiper = new Swiper('.benefits-swiper', {
 //   spaceBetween: 20,
 //   slidesPerView: 1.2,

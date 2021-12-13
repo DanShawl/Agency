@@ -12,6 +12,7 @@ $header-height: 3.5rem;
 // $first-color: rgb(245, 159, 79);
 $first-color: rgb(245, 104, 79);
 $first-color-alt: rgb(230, 79, 52);
+$first-color-bg: rgb(255, 246, 245);
 
 // $first-color: rgb(245, 118, 79);
 
@@ -94,7 +95,7 @@ input {
 }
 
 body {
-  margin: 0;
+  margin: 0 0 4rem 0;
   background-color: $body-color;
   color: $text-color;
   /*For animation dark mode*/
@@ -176,7 +177,7 @@ button {
 }
 
 .section {
-  padding: 1rem 0 0;
+  padding: 2rem 0 0;
 }
 
 .section__title {
@@ -186,6 +187,7 @@ button {
 .button {
   padding: 0.75rem 1.15rem;
   background-color: $first-color;
+  border: 1px rgb(230, 79, 52) solid;
   color: #fff;
   font-weight: $font-bold;
   font-size: 0.875rem;
@@ -345,6 +347,12 @@ button {
 }
 
 .contact__btn {
+  background-color: $first-color;
+  color: #fff;
+  font-weight: $font-bold;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  transition: 0.3s;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -401,6 +409,11 @@ button {
   }
 }
 
+// .home__btn {
+//   // border: 1px rgb(243, 92, 66) solid;
+//   border: 1px rgb(245, 76, 47) solid;
+// }
+
 //  Image Grid ---------------------------------------------
 
 .image__grid-container {
@@ -417,6 +430,58 @@ button {
   img:nth-child(3) {
     display: none;
   }
+}
+
+//  Testimonials ---------------------------------------------
+
+.testimonials {
+  // background-color: rgb(243, 243, 243);
+  padding: $mg-2 0;
+}
+
+.testimonial__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+}
+.testimonial__icon {
+  font-size: 2.75rem;
+  color: $title-color;
+}
+
+.testimonial__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.testimonial__name {
+  font-size: $h3-font-size;
+  font-weight: $font-medium;
+  color: $title-color;
+}
+
+.testimonial__link {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial__link a,
+.testimonial__link i {
+  color: $first-color;
+}
+
+.testimonial__profile-data {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  row-gap: 0.5rem;
+}
+
+.testimonial-swiper {
+  margin-left: initial;
+  margin-right: initial;
 }
 
 //  Benefits ---------------------------------------------
@@ -490,9 +555,15 @@ button {
 //   font-weight: var(--font-bold);
 // }
 
+//  Our Work ---------------------------------------------
+
 .work__grid {
   display: grid;
   row-gap: 20px;
+}
+
+.work__info {
+  margin-bottom: 2.25rem;
 }
 
 .img__block {
@@ -550,12 +621,60 @@ button {
   img {
     box-shadow: rgba(27, 82, 27, 0.342) 0px -15px 35px 5px;
   }
-
-  .img__overlay {
-    // background: linear-gradient(
-    //   to top,
-    //   rgb(27, 82, 27),
-    //   rgba(27, 82, 27, 0.219)
-    // );
+}
+.img__block-2 {
+  background: rgb(243, 243, 243);
+  .img__block-title {
+    // color: rgb(10, 87, 10);
+    color: $title-color;
   }
+  .img__block-subtitle {
+    color: $text-color;
+  }
+  img {
+    box-shadow: rgba(0, 0, 0, 0.342) 0px -15px 35px 5px;
+  }
+}
+
+//  Services ---------------------------------------------
+
+.services {
+  background: $first-color-bg;
+  margin: 2.5rem 0;
+  padding-bottom: 1.5rem;
+}
+
+.services__info {
+  margin-bottom: 2.25rem;
+}
+
+.service__item {
+  margin-bottom: $mg-1-5;
+  li {
+    font-weight: $font-medium;
+    margin-bottom: 0.4rem;
+  }
+}
+
+.testimonial__section {
+  margin-bottom: $mg-3;
+}
+
+//  Footer ---------------------------------------------
+
+footer {
+  border-top: 1px solid lightgray;
+}
+
+.footer__logo,
+.footer__logo-icon {
+  color: $title-color;
+}
+
+.footer__logo {
+  margin-bottom: $mg-1;
+}
+
+.footer__company {
+  margin-bottom: $mg-3;
 }

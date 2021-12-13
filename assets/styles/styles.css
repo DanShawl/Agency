@@ -22,7 +22,7 @@ input {
 }
 
 body {
-  margin: 0;
+  margin: 0 0 4rem 0;
   background-color: #fcfcfc;
   color: #595959;
   /*For animation dark mode*/
@@ -118,7 +118,7 @@ button {
 }
 
 .section {
-  padding: 1rem 0 0;
+  padding: 2rem 0 0;
 }
 
 .section__title {
@@ -128,6 +128,7 @@ button {
 .button {
   padding: 0.75rem 1.15rem;
   background-color: #f5684f;
+  border: 1px #e64f34 solid;
   color: #fff;
   font-weight: 700;
   font-size: 0.875rem;
@@ -321,6 +322,13 @@ button {
 }
 
 .contact__btn {
+  background-color: #f5684f;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -421,6 +429,77 @@ button {
   display: none;
 }
 
+.testimonials {
+  padding: 2rem 0;
+}
+
+.testimonial__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+}
+
+.testimonial__icon {
+  font-size: 2.75rem;
+  color: #262626;
+}
+
+.testimonial__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.testimonial__name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #262626;
+}
+
+.testimonial__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial__link a,
+.testimonial__link i {
+  color: #f5684f;
+}
+
+.testimonial__profile-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* justify-content: center; */
+  row-gap: 0.5rem;
+}
+
+.testimonial-swiper {
+  margin-left: initial;
+  margin-right: initial;
+}
+
 .benefits__description {
   margin-bottom: 2.25rem;
 }
@@ -445,6 +524,10 @@ button {
   display: -ms-grid;
   display: grid;
   row-gap: 20px;
+}
+
+.work__info {
+  margin-bottom: 2.25rem;
 }
 
 .img__block {
@@ -507,5 +590,62 @@ button {
 .img__block-1 img {
   -webkit-box-shadow: rgba(27, 82, 27, 0.342) 0px -15px 35px 5px;
           box-shadow: rgba(27, 82, 27, 0.342) 0px -15px 35px 5px;
+}
+
+.img__block-2 {
+  background: #f3f3f3;
+}
+
+.img__block-2 .img__block-title {
+  color: #262626;
+}
+
+.img__block-2 .img__block-subtitle {
+  color: #595959;
+}
+
+.img__block-2 img {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.342) 0px -15px 35px 5px;
+          box-shadow: rgba(0, 0, 0, 0.342) 0px -15px 35px 5px;
+}
+
+.services {
+  background: #fff6f5;
+  margin: 2.5rem 0;
+  padding-bottom: 1.5rem;
+}
+
+.services__info {
+  margin-bottom: 2.25rem;
+}
+
+.service__item {
+  margin-bottom: 1.5rem;
+}
+
+.service__item li {
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.testimonial__section {
+  margin-bottom: 3rem;
+}
+
+footer {
+  border-top: 1px solid lightgray;
+}
+
+.footer__logo,
+.footer__logo-icon {
+  color: #262626;
+}
+
+.footer__logo {
+  margin-bottom: 1rem;
+}
+
+.footer__company {
+  margin-bottom: 3rem;
 }
 /*# sourceMappingURL=styles.css.map */
