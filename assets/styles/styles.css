@@ -45,6 +45,10 @@ button {
   letter-spacing: 0.5px;
 }
 
+p {
+  line-height: 1.2rem;
+}
+
 ul {
   list-style: none;
 }
@@ -118,7 +122,7 @@ button {
 }
 
 .section {
-  padding: 2rem 0 0;
+  padding: 1rem 0 0;
 }
 
 .section__title {
@@ -358,6 +362,10 @@ button {
           justify-content: center;
 }
 
+.home__container p {
+  font-weight: 500;
+}
+
 .home__title {
   font-size: 1.5rem;
 }
@@ -430,7 +438,7 @@ button {
 }
 
 .testimonials {
-  padding: 2rem 0;
+  margin-bottom: 2rem;
 }
 
 .testimonial__card {
@@ -518,6 +526,31 @@ button {
 
 .benefits__img {
   margin-bottom: 1rem;
+}
+
+.connect__container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 1rem;
+}
+
+.connect__container div {
+  margin-bottom: 1rem;
+}
+
+.connect__container button {
+  font-weight: 500;
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+
+.connect__container button:hover {
+  background: #f8f8f8;
 }
 
 .work__grid {
@@ -647,5 +680,95 @@ footer {
 
 .footer__company {
   margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 576px) {
+  .home {
+    height: 100vh;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .nav__menu {
+    width: 60%;
+  }
+  .contact__btn {
+    width: 200px;
+    left: unset;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    border-radius: 3px;
+  }
+  .contact__btn:hover {
+    background: #e64f34;
+  }
+  .home__partners {
+    margin: 0 1.5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .home__partners p {
+    text-align: center;
+  }
+  .image__grid-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .image__grid-container img {
+    padding: 0;
+    max-width: 50%;
+  }
+  .image__grid-container img:nth-child(2) {
+    display: block;
+  }
+  .image__grid-container img:nth-child(3) {
+    display: block;
+  }
+  .testimonials {
+    margin-top: 3rem;
+  }
+  .benefits__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .benefits__img {
+    margin-top: 2rem;
+    max-height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: none;
+  }
+  .benefits__subtitle {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 678px) {
+  .container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .home__title {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 26px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
