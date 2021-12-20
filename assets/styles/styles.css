@@ -663,10 +663,10 @@ button {
 
 .discover {
   margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 
 .discover__container {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -681,6 +681,47 @@ button {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+.discover__title {
+  margin-bottom: 1rem;
+}
+
+.discover__info {
+  margin-bottom: 2rem;
+}
+
+.discover__headshots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.discover__headshots img:nth-child(4),
+.discover__headshots img:nth-child(5) {
+  display: none;
+}
+
+.discover__img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.discover__description {
+  margin-bottom: 2rem;
+}
+
+.discover__text span {
+  font-weight: 700;
 }
 
 .connect__container {
@@ -941,6 +982,12 @@ footer {
   .projects__description {
     max-width: 525px;
   }
+  .discover__description {
+    max-width: 525px;
+  }
+  .discover__headshots img:nth-child(4) {
+    display: initial;
+  }
 }
 
 @media screen and (min-width: 678px) {
@@ -958,6 +1005,9 @@ footer {
   .home__description {
     font-size: 20px;
     line-height: 1.75rem;
+  }
+  .discover__headshots img:nth-child(5) {
+    display: initial;
   }
 }
 
@@ -1061,6 +1111,10 @@ footer {
   .services__subtitle {
     max-width: 650px;
   }
+  .discover__headshots img {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -1141,6 +1195,9 @@ footer {
   .projects-swiper {
     max-width: 1100px;
     overflow: visible;
+  }
+  .discover__description {
+    max-width: 725px;
   }
 }
 
