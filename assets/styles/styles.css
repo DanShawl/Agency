@@ -832,7 +832,8 @@ button {
 .project__data {
   position: absolute;
   bottom: 2rem;
-  left: 2rem;
+  left: 1rem;
+  padding-right: 0.5rem;
 }
 
 .project__data span {
@@ -857,7 +858,13 @@ button {
 .project__info {
   font-weight: bold;
   font-size: 20px;
+  margin-bottom: 1rem;
   color: #d6d6d6;
+}
+
+.project__details {
+  color: #fff;
+  font-size: 16px;
 }
 
 .services {
@@ -921,7 +928,7 @@ footer {
     left: unset;
     right: 1.5rem;
     bottom: 1.5rem;
-    border-radius: 3px;
+    border-radius: 2px;
   }
   .contact__btn:hover {
     background: #e64f34;
@@ -1188,6 +1195,9 @@ footer {
     padding-top: 5rem;
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+  .project__data {
+    left: 2rem;
   }
   .swiper-btns {
     display: initial;

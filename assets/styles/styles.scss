@@ -917,7 +917,8 @@ button {
 .project__data {
   position: absolute;
   bottom: 2rem;
-  left: 2rem;
+  left: 1rem;
+  padding-right: 0.5rem;
   // z-index: 50;
   span {
     color: $first-color;
@@ -941,8 +942,14 @@ button {
 .project__info {
   font-weight: bold;
   font-size: 20px;
-  // margin-bottom: 3rem;
+  margin-bottom: 1rem;
   color: rgb(214, 214, 214);
+}
+
+.project__details {
+  color: #fff;
+  font-size: 16px;
+  // max-width: 550px;
 }
 
 // .projects__card img {
@@ -1062,7 +1069,7 @@ footer {
     left: unset;
     right: 1.5rem;
     bottom: 1.5rem;
-    border-radius: 3px;
+    border-radius: 2px;
   }
   .contact__btn:hover {
     background: $first-color-alt;
@@ -1334,6 +1341,9 @@ footer {
     padding-right: 4rem;
   }
   .projects__container {
+  }
+  .project__data {
+    left: 2rem;
   }
 
   .swiper-btns {
