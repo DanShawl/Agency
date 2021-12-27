@@ -1,6 +1,9 @@
 //  Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
 //  Variables
 
 // :root {
@@ -239,6 +242,16 @@ button {
   color: $title-color;
 }
 
+.nav__logo {
+  margin-right: 3rem;
+}
+
+// .nav__logo span {
+//   // font-family: 'EB Garamond', serif;
+//   font-family: 'Mea Culpa', cursive;
+//   font-size: 24px;
+// }
+
 .nav__callBtn {
   padding: 0.5rem;
   background: $button-color;
@@ -255,7 +268,7 @@ button {
 
 .nav__logo,
 .footer__logo {
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-weight: $font-bold;
   letter-spacing: 1px;
   display: inline-flex;
@@ -377,6 +390,10 @@ button {
 
 .active-link {
   color: $button-color;
+}
+
+.header__logo {
+  height: 40px;
 }
 
 //  Home ------------------------------------------------
@@ -627,6 +644,8 @@ button {
   img {
     border-radius: 50%;
     width: 75px;
+    height: 75px;
+    object-fit: cover;
     margin-bottom: 1rem;
     margin-top: 1.5rem;
   }
@@ -1004,9 +1023,11 @@ button {
 //  Services ---------------------------------------------
 
 .services {
-  background: $first-color-bg;
+  background: #f3f3f1;
+  // background: $first-color-bg;
   margin: 2.5rem 0;
   padding-bottom: 1.5rem;
+  padding-top: 3.5rem;
 }
 
 .services__info {
@@ -1279,6 +1300,7 @@ footer {
     line-height: 1.75rem;
     color: $title-color;
   }
+
   .home {
     display: flex;
     flex-direction: column;
@@ -1393,7 +1415,7 @@ footer {
   }
 
   .projects-swiper {
-    max-width: 1320px;
+    max-width: 1340px;
     // overflow: visible;
   }
 }

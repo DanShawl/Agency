@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap");
 /* $button-color: #4c8ffb; */
 /* $button-color: hsl(204, 100%, 52%); */
 /* $button-color: hsl(0, 0%, 17%); */
@@ -181,6 +183,10 @@ button {
   color: #262626;
 }
 
+.nav__logo {
+  margin-right: 3rem;
+}
+
 .nav__callBtn {
   padding: 0.5rem;
   background: #1988d2;
@@ -199,7 +205,6 @@ button {
 
 .nav__logo,
 .footer__logo {
-  text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
   display: -webkit-inline-box;
@@ -349,6 +354,10 @@ button {
 
 .active-link {
   color: #1988d2;
+}
+
+.header__logo {
+  height: 40px;
 }
 
 .home {
@@ -620,6 +629,9 @@ button {
 .tm__card img {
   border-radius: 50%;
   width: 75px;
+  height: 75px;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
 }
@@ -868,9 +880,10 @@ button {
 }
 
 .services {
-  background: #fff6f5;
+  background: #f3f3f1;
   margin: 2.5rem 0;
   padding-bottom: 1.5rem;
+  padding-top: 3.5rem;
 }
 
 .services__info {
@@ -1137,6 +1150,11 @@ footer {
     line-height: 1.75rem;
     color: #262626;
   }
+  .nav {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
   .home {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1244,7 +1262,7 @@ footer {
     width: 1300px;
   }
   .projects-swiper {
-    max-width: 1320px;
+    max-width: 1340px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

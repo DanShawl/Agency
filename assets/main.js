@@ -63,7 +63,7 @@ let testimonialSwiper = new Swiper('.testimonial-swiper', {
 
 let projectsSwiper = new Swiper('.projects-swiper', {
   spaceBetween: 20,
-  loop: 'true',
+  // loop: 'true',
   slidesPerView: 'auto',
   centeredSlides: 'true',
   // freeMode: 'true',
@@ -83,7 +83,8 @@ let projectsSwiper = new Swiper('.projects-swiper', {
     },
     1024: {
       spaceBetween: 30,
-      slidesPerView: 1.25,
+      slidesPerView: 1.5,
+      // slidesPerView: 1.25,
       centeredSlides: false,
     },
   },
