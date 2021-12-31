@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* $button-color: #4c8ffb; */
 /* $button-color: hsl(204, 100%, 52%); */
 /* $button-color: hsl(0, 0%, 17%); */
@@ -183,10 +194,6 @@ button {
   color: #262626;
 }
 
-.nav__logo {
-  margin-right: 3rem;
-}
-
 .nav__callBtn {
   padding: 0.5rem;
   background: #1988d2;
@@ -221,6 +228,28 @@ button {
 .nav__logo-icon,
 .footer__logo-icon {
   font-size: 1.5rem;
+}
+
+.nav__logo h1 {
+  margin-right: 3rem;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-family: "Urbanist", sans-serif;
+  color: #262626;
+  font-weight: 300;
+  font-family: 'Outfit', sans-serif;
+}
+
+.nav__logo span {
+  color: #f5684f;
+  font-weight: 700;
+  font-size: 21px;
+  letter-spacing: 0.025rem;
 }
 
 .nav__btns {
@@ -386,6 +415,9 @@ button {
   color: #262626;
   max-width: 750px;
   margin-bottom: 2rem;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4rem;
 }
 
 .home__title {
@@ -549,6 +581,10 @@ button {
 
 .benefits__group div {
   max-width: 300px;
+}
+
+.benefits__title {
+  max-width: 700px;
 }
 
 .benefits__description {
@@ -881,7 +917,7 @@ button {
 
 .services {
   background: #f3f3f1;
-  margin: 2.5rem 0;
+  margin: 2.5rem 0 0;
   padding-bottom: 1.5rem;
   padding-top: 3.5rem;
 }
@@ -897,6 +933,58 @@ button {
 .service__item li {
   font-weight: 500;
   margin-bottom: 0.4rem;
+}
+
+.how {
+  background: #f3f3f1;
+}
+
+.how__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.how__title {
+  margin: 2rem 0 1.5rem;
+}
+
+.how__images img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.how__images img:nth-child(2),
+.how__images img:nth-child(3) {
+  display: none;
+}
+
+.how__item {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.how__item h3 {
+  margin: 0.25rem 0 0.5rem;
+}
+
+.how__item h4 {
+  color: #f5684f;
+}
+
+.how__item p {
+  color: #595959;
+}
+
+.how__item:nth-child(4) {
+  border-bottom: none;
 }
 
 .testimonial__section {
@@ -1150,11 +1238,6 @@ footer {
     line-height: 1.75rem;
     color: #262626;
   }
-  .nav {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
   .home {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1172,7 +1255,7 @@ footer {
   }
   .home__title {
     margin: 0.75rem auto 1.5rem;
-    max-width: 850px;
+    max-width: 1000px;
     font-size: 52px;
   }
   .home__description {
@@ -1226,6 +1309,28 @@ footer {
   }
   .discover__description {
     max-width: 725px;
+  }
+  .how__container {
+    padding-top: 5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 5rem;
+            column-gap: 5rem;
+    width: 100%;
+  }
+  .how__info {
+    width: 45%;
+  }
+  .how__images {
+    width: 55%;
+  }
+  .how__images img {
+    height: 500px;
   }
 }
 

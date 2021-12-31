@@ -98,6 +98,20 @@ let projectsSwiper = new Swiper('.projects-swiper', {
   // },
 });
 
+// const how1 = document.getElementById('how1');
+// const how2 = document.getElementById('how2');
+// const how3 = document.getElementById('how3');
+
+// how1.addEventListener('click', changeImage(this));
+
+// const changeImage = (img) => {};
+
+// onclick='changeImage(this);
+
+// function changeImage(img) {
+//   document.getElementById("img").src = img.src.replace("_t", "_b");
+// }
+
 // let stepsSwiper = new Swiper('.benefits-swiper', {
 //   spaceBetween: 20,
 //   slidesPerView: 1.2,

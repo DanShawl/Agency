@@ -4,6 +4,28 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 //  Variables
 
 // :root {
@@ -122,6 +144,8 @@ button {
 
 p {
   line-height: 1.2rem;
+  // font-family: 'Outfit', sans-serif;
+  // font-weight: 100;
   // font-weight: $font-medium;
 }
 
@@ -242,16 +266,6 @@ button {
   color: $title-color;
 }
 
-.nav__logo {
-  margin-right: 3rem;
-}
-
-// .nav__logo span {
-//   // font-family: 'EB Garamond', serif;
-//   font-family: 'Mea Culpa', cursive;
-//   font-size: 24px;
-// }
-
 .nav__callBtn {
   padding: 0.5rem;
   background: $button-color;
@@ -281,6 +295,46 @@ button {
 .footer__logo-icon {
   font-size: 1.5rem;
 }
+
+.nav__logo h1 {
+  margin-right: 3rem;
+  font-size: 20px;
+  display: flex;
+  align-items: baseline;
+  // column-gap: 0.3rem;
+
+  font-family: $body-font;
+
+  // color: $first-color;
+  // font-weight: 900;
+  color: $title-color;
+  font-weight: 300;
+  font-family: 'Outfit', sans-serif;
+  // font-family: 'Sora', sans-serif;
+  // font-family: 'Lexend Deca', sans-serif;
+  // font-family: 'Red Hat Text', sans-serif;
+  // font-family: 'Space Grotesk', sans-serif;
+  // font-family: 'Spartan', sans-serif;
+  // font-family: 'Dosis', san-serif;
+  // font-family: 'Baloo 2', cursive;
+  // font-family: 'Fredoka One', cursive;
+  // font-family: 'Lilita One', cursive;
+}
+
+.nav__logo span {
+  color: $first-color;
+  font-weight: 700;
+  font-size: 21px;
+  letter-spacing: 0.025rem;
+}
+// .nav__logo span {
+//   font-size: 24px;
+// }
+
+// .nav__logo span:nth-child(2) {
+//   // margin-left: 0.225rem;
+//   // margin-right: 0.05rem;
+// }
 
 .nav__btns {
   display: flex;
@@ -409,10 +463,14 @@ button {
   p {
     font-weight: $font-medium;
   }
+
   .home__description {
     color: $title-color;
     max-width: 750px;
     margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4rem;
   }
 }
 
@@ -542,6 +600,10 @@ button {
   div {
     max-width: 300px;
   }
+}
+
+.benefits__title {
+  max-width: 700px;
 }
 .benefits__description {
   margin-top: 2rem;
@@ -1025,7 +1087,7 @@ button {
 .services {
   background: #f3f3f1;
   // background: $first-color-bg;
-  margin: 2.5rem 0;
+  margin: 2.5rem 0 0;
   padding-bottom: 1.5rem;
   padding-top: 3.5rem;
 }
@@ -1040,6 +1102,50 @@ button {
     font-weight: $font-medium;
     margin-bottom: 0.4rem;
   }
+}
+
+.how {
+  background: #f3f3f1;
+  // padding-bottom: 2rem;
+}
+
+.how__container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.how__title {
+  margin: 2rem 0 1.5rem;
+}
+
+.how__images img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.how__images img:nth-child(2),
+.how__images img:nth-child(3) {
+  display: none;
+}
+
+.how__item {
+  h3 {
+    margin: 0.25rem 0 0.5rem;
+  }
+  h4 {
+    color: $first-color;
+  }
+  p {
+    color: $text-color;
+  }
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.how__item:nth-child(4) {
+  border-bottom: none;
 }
 
 .testimonial__section {
@@ -1314,7 +1420,7 @@ footer {
   }
   .home__title {
     margin: 0.75rem auto 1.5rem;
-    max-width: 850px;
+    max-width: 1000px;
     font-size: 52px;
   }
 
@@ -1377,6 +1483,30 @@ footer {
   }
   .discover__description {
     max-width: 725px;
+  }
+
+  .how__container {
+    padding-top: 5rem;
+    flex-direction: row-reverse;
+    align-items: center;
+    column-gap: 5rem;
+    width: 100%;
+  }
+
+  .how__info {
+    width: 45%;
+  }
+
+  .how__images {
+    width: 55%;
+    img {
+      height: 500px;
+    }
+
+    // img:nth-child(2),
+    // img:nth-child(3) {
+    //   display: block;
+    // }
   }
 }
 
