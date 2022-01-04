@@ -854,7 +854,8 @@ button {
   text-align: center;
 }
 .discover__title {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  max-width: 750px;
 }
 
 .discover__info {
@@ -1097,12 +1098,142 @@ button {
 }
 
 .service__item {
-  margin-bottom: $mg-1-5;
+  margin-bottom: 3rem;
   li {
     font-weight: $font-medium;
     margin-bottom: 0.4rem;
   }
+  i {
+    font-size: 24px;
+    color: $first-color;
+  }
 }
+
+.steps {
+  padding-top: 3rem;
+}
+
+.steps__info {
+  h2 {
+    margin-bottom: 1rem;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+  button {
+    display: none;
+  }
+  margin-bottom: 2rem;
+}
+.step__item {
+  position: relative;
+  height: 300px;
+  background: #f3f3f1;
+  margin-bottom: 3rem;
+  padding: 2rem;
+
+  h3 {
+    margin: 0.5rem 0 1rem;
+  }
+  a {
+    position: absolute;
+    bottom: 2rem;
+    max-width: 80%;
+    color: $first-color;
+    padding-bottom: 0.25rem;
+  }
+}
+
+.step__item a:hover {
+  color: $first-color-alt;
+  text-decoration: underline;
+}
+
+.step__number {
+  color: $first-color;
+  font-weight: 900;
+  font-size: 28px;
+}
+
+@media screen and (min-width: 767px) {
+  .steps {
+    height: 1600px;
+    padding-top: 8rem;
+  }
+  .steps__container {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 1200px;
+  }
+
+  .steps__group {
+    max-width: 40%;
+  }
+  .steps__info {
+    max-width: 40%;
+    position: sticky;
+    top: 12rem;
+    margin-right: 5rem;
+    button {
+      display: block;
+    }
+  }
+}
+
+// .steps {
+//   height: 1600px;
+//   padding-top: 8rem;
+// }
+// .steps__container {
+
+//   position: absolute;
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: flex-start;
+//   height: 1200px;
+
+// }
+
+// .steps__group {
+//   max-width: 40%;
+// }
+
+// .steps__info {
+//   h2 {
+//     margin-bottom: 1rem;
+//   }
+//   p {
+//     margin-bottom: 1rem;
+//   }
+//   max-width: 40%;
+
+//   position: sticky;
+//   top: 12rem;
+//   margin-right: 5rem;
+// }
+
+// .step__item {
+//   position: relative;
+//   height: 300px;
+//   background: #f3f3f1;
+//   margin-bottom: 3rem;
+//   padding: 2rem;
+
+//   h3 {
+//     margin: 0.5rem 0 1rem;
+//   }
+//   a {
+//     position: absolute;
+//     bottom: 2rem;
+//     max-width: 80%;
+//     color: $first-color;
+//     padding-bottom: 0.25rem;
+//   }
+// }
+
+// How it works ----------------------------------------------------
 
 .how {
   background: #f3f3f1;
@@ -1252,6 +1383,21 @@ footer {
   .projects__description {
     max-width: 525px;
   }
+
+  .services__group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 5rem;
+    // margin-right: 3rem;
+    .service__item {
+      width: 40%;
+    }
+    // flex: auto;
+    // flex-basis: auto;
+    // margin-right: 5rem;
+    // column-gap: 5rem;
+  }
   .discover__description {
     max-width: 525px;
   }
@@ -1275,10 +1421,14 @@ footer {
   h2 {
     font-size: 26px;
   }
-  .home__description {
-    font-size: 20px;
-    line-height: 1.75rem;
-    // max-width: 850px;
+
+  .home__container {
+    .home__description {
+      color: $text-color;
+      font-size: 20px;
+      line-height: 1.75rem;
+      max-width: 850px;
+    }
   }
   .discover__headshots {
     img:nth-child(5) {
@@ -1375,10 +1525,16 @@ footer {
     max-width: 650px;
   }
   .services__group {
-    display: flex;
-    justify-content: flex-start;
-    column-gap: 12rem;
+    // width: 100%;
+    // display: flex;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+    column-gap: 0rem;
+    // row-gap: 5rem;
     // flex-direction: row;
+    .service__item {
+      width: 30%;
+    }
   }
 
   .services__subtitle {
@@ -1428,6 +1584,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+
   .container {
     max-width: 950px;
     margin: 0 auto;
@@ -1483,6 +1640,10 @@ footer {
   }
   .discover__description {
     max-width: 725px;
+  }
+
+  .services__group {
+    // column-gap: 12rem;
   }
 
   .how__container {
