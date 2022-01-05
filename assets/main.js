@@ -83,7 +83,7 @@ let projectsSwiper = new Swiper('.projects-swiper', {
     },
     1024: {
       spaceBetween: 30,
-      slidesPerView: 1.5,
+      slidesPerView: 2,
       // slidesPerView: 1.25,
       centeredSlides: false,
     },

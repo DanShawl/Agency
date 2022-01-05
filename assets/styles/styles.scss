@@ -468,7 +468,7 @@ button {
     color: $title-color;
     max-width: 750px;
     margin-bottom: 2rem;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.4rem;
   }
@@ -924,6 +924,16 @@ button {
   padding-bottom: 5rem;
   padding-top: 3rem;
 }
+.projects__title {
+  text-align: center;
+}
+.projects__data {
+  // margin: 0 auto;
+  text-align: center;
+}
+.projects__description {
+  margin: 0 auto;
+}
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
@@ -956,11 +966,12 @@ button {
 
 .projects__title {
   margin-bottom: $mg-1;
-  text-align: left;
+  // text-align: left;
 }
 
 .projects__card {
   width: 80%;
+  // max-width: 400px;
   box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.1);
   padding: 2rem 1.25rem;
   border-radius: 3px;
@@ -1118,7 +1129,7 @@ button {
     margin-bottom: 1rem;
   }
   p {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   button {
     display: none;
@@ -1134,6 +1145,9 @@ button {
 
   h3 {
     margin: 0.5rem 0 1rem;
+  }
+  .step__content {
+    color: $text-color;
   }
   a {
     position: absolute;
@@ -1155,10 +1169,15 @@ button {
   font-size: 28px;
 }
 
+.steps__description {
+  // font-weight: 500;
+  // color: $text-color;
+}
+
 @media screen and (min-width: 767px) {
   .steps {
-    height: 1600px;
-    padding-top: 8rem;
+    height: 1500px;
+    padding-top: 3rem;
   }
   .steps__container {
     position: absolute;
@@ -1424,7 +1443,8 @@ footer {
 
   .home__container {
     .home__description {
-      color: $text-color;
+      // color: $text-color;
+      // font-weight: 400;
       font-size: 20px;
       line-height: 1.75rem;
       max-width: 850px;
@@ -1640,10 +1660,6 @@ footer {
   }
   .discover__description {
     max-width: 725px;
-  }
-
-  .services__group {
-    // column-gap: 12rem;
   }
 
   .how__container {

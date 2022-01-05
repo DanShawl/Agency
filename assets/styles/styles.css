@@ -415,7 +415,7 @@ button {
   color: #262626;
   max-width: 750px;
   margin-bottom: 2rem;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.4rem;
 }
@@ -807,6 +807,18 @@ button {
   padding-top: 3rem;
 }
 
+.projects__title {
+  text-align: center;
+}
+
+.projects__data {
+  text-align: center;
+}
+
+.projects__description {
+  margin: 0 auto;
+}
+
 .swiper-button-prev:after,
 .swiper-button-next:after {
   content: '';
@@ -839,7 +851,6 @@ button {
 
 .projects__title {
   margin-bottom: 1rem;
-  text-align: left;
 }
 
 .projects__card {
@@ -954,7 +965,7 @@ button {
 }
 
 .steps__info p {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .steps__info button {
@@ -971,6 +982,10 @@ button {
 
 .step__item h3 {
   margin: 0.5rem 0 1rem;
+}
+
+.step__item .step__content {
+  color: #595959;
 }
 
 .step__item a {
@@ -994,8 +1009,8 @@ button {
 
 @media screen and (min-width: 767px) {
   .steps {
-    height: 1600px;
-    padding-top: 8rem;
+    height: 1500px;
+    padding-top: 3rem;
   }
   .steps__container {
     position: absolute;
@@ -1216,7 +1231,6 @@ footer {
     font-size: 26px;
   }
   .home__container .home__description {
-    color: #595959;
     font-size: 20px;
     line-height: 1.75rem;
     max-width: 850px;
