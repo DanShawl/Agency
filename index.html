@@ -23,6 +23,10 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
     <!------------------------ CSS ---------------------->
     <link rel="stylesheet" href="assets/styles/styles.css" />
     <title>louis biscuits - Philadelphia Web Design for Health Brands.</title>
@@ -87,7 +91,13 @@
             <i class="bx bx-menu nav__header-item"></i>
           </div>
         </div>
-        <button class="contact__btn">Get a quote</button>
+        <button class="contact__btn">
+          <a
+            href=""
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/louisbiscuits?hide_landing_page_details=1&text_color=191919&primary_color=f5684f'});return false;"
+            >Book a free call</a
+          >
+        </button>
       </nav>
     </header>
     <!-- 
@@ -134,7 +144,7 @@ Conversion Optimization
         <div class="home__container container">
           <div class="home__info">
             <h4 class="home__subtitle">
-              Web development in the heart of Philadelphia, PA
+              Web design in the heart of Philadelphia.
             </h4>
             <!-- <h4 class="home__subtitle">
               Philadelphia Web Development for Health Brands
@@ -149,8 +159,8 @@ Conversion Optimization
               on <span>running</span> it.
             </h1> -->
             <h1 class="home__title title">
-              <span>Affordable</span> web design and development for
-              <span>growing</span> your health business.
+              <span>Affordable</span> web design <br />
+              for <span>growing</span> your health business.
             </h1>
             <!-- <h1 class="home__title title">
               Web development designed to <span>grow</span> your business, so
@@ -161,9 +171,9 @@ Conversion Optimization
               on <span>running</span> it.
             </h1> -->
             <h2 class="home__description subtitle">
-              We are a Philadelphia, PA web design agency that develops
-              affordable, custom websites to drive sales, increase leads, and
-              build powerful health brand identities.
+              We are a Philadelphia web design agency that develops affordable,
+              custom websites to drive sales, increase leads, and build powerful
+              health brand identities.
             </h2>
             <!-- <h2 class="home__description subtitle">
               We are a Philadelphia, PA web design agency that develops
@@ -176,13 +186,23 @@ Conversion Optimization
               a powerful brand identity.
             </p> -->
 
-            <!-- <button class="home__btn button">View our work</button> -->
-            <button class="home__btn button">
-              View our Custom Web Design Work
-            </button>
+            <div class="home__buttons">
+              <button>
+                <a
+                  href=""
+                  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/louisbiscuits?hide_landing_page_details=1&text_color=191919&primary_color=f5684f'});return false;"
+                  class="home__btn button"
+                  >Book a free consultation</a
+                >
+              </button>
+              <!-- <button class="home__btn button">Book a free consultation</button> -->
+              <button class="work__btn">
+                How can we help grow your business?
+              </button>
+            </div>
           </div>
         </div>
-        <div class="home__partners">
+        <!-- <div class="home__partners">
           <p class="home__partners-text">TRUSTED BY</p>
           <div class="home__partners-group">
             <div class="home__partner">
@@ -195,7 +215,7 @@ Conversion Optimization
               <i class="bx bxl-slack"></i>
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
 
       <!---------------------- Image Grid ---------------------->
@@ -221,7 +241,7 @@ Conversion Optimization
       </section>
 
       <!---------------------- Testimonials ---------------------->
-
+      <!-- 
       <section class="testimonials">
         <div class="testimonial__container container grid">
           <div class="swiper testimonial-swiper">
@@ -285,7 +305,7 @@ Conversion Optimization
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!---------------------- Benefits ---------------------->
       <section class="benefits__section section">
@@ -411,21 +431,6 @@ Conversion Optimization
           />
         </div>
       </section>
-      <!-- 
-      <div class="grid-gallery active">
-        <img width="413" height="270" src="http://placekitten.com/g/413/270" />
-        <img width="230" height="200" src="http://placekitten.com/g/230/200" />
-        <img width="173" height="153" src="http://placekitten.com/g/173/153" />
-        <img width="173" height="440" src="http://placekitten.com/g/173/440" />
-        <img width="359" height="235" src="http://placekitten.com/g/359/235" />
-        <img width="175" height="125" src="http://placekitten.com/g/175/125" />
-        <img width="175" height="125" src="http://placekitten.com/g/175/125" />
-        <img width="359" height="125" src="http://placekitten.com/g/359/125" />
-        <img width="173" height="328" src="http://placekitten.com/g/173/328" />
-        <img width="116" height="104" src="http://placekitten.com/g/116/104" />
-        <img width="116" height="104" src="http://placekitten.com/g/116/104" />
-        <img width="242" height="210" src="http://placekitten.com/g/242/210" />
-      </div> -->
 
       <section class="discover" id="discover">
         <div class="discover__container container">
@@ -472,7 +477,14 @@ Conversion Optimization
               digitally.
             </p>
           </div>
-          <button class="home__btn button">Email Us Today</button>
+          <button class="work__btn">
+            <a
+              href=""
+              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/louisbiscuits?hide_landing_page_details=1&text_color=191919&primary_color=f5684f'});return false;"
+              class="work__btn-large"
+              >Get found online today</a
+            >
+          </button>
         </div>
       </section>
       <!---------------------- Connect ---------------------->
@@ -548,7 +560,7 @@ Conversion Optimization
         </div>
       </section> -->
 
-      <section class="steps container">
+      <!-- <section class="steps container">
         <div class="steps__container">
           <div class="steps__info">
             <h2 class="steps__title">How does our web design process work?</h2>
@@ -576,7 +588,6 @@ Conversion Optimization
             </div>
             <div class="step__item">
               <p class="step__number">02</p>
-              <!-- <h3>Research</h3> -->
               <h3>Research & Discovery</h3>
               <p class="step__content">
                 We break down your target market, competition, and current
@@ -604,7 +615,7 @@ Conversion Optimization
             </div>
             <div class="step__item">
               <p class="step__number">04</p>
-              <h3>Growth & Maintenence</h3>
+              <h3>Growth & Maintenance</h3>
               <p class="step__content">
                 We offer exclusive <strong>managed hosting</strong>, dedicated
                 <strong>digital marketing campaigns</strong>, and continued
@@ -612,7 +623,73 @@ Conversion Optimization
                 success.
               </p>
               <a href="#" class="steps__link"
-                >How do we grow your health business?</a
+                >How do we grow your health business website?</a
+              >
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="steps container">
+        <div class="steps__container">
+          <div class="steps__info">
+            <h2 class="steps__title">
+              We can help grow your business in 3 unique ways.
+            </h2>
+            <p class="steps__description">
+              You deserve better than just a website. Our refined website
+              services provide end-to-end solutions to get your website from
+              just an idea to a well-oiled marketing and customer cunversion
+              machine.
+            </p>
+            <button>
+              <a
+                href=""
+                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/louisbiscuits?hide_landing_page_details=1&text_color=191919&primary_color=f5684f'});return false;"
+                class="home__btn button"
+                >Grow your business - Book a call</a
+              >
+            </button>
+          </div>
+          <div class="steps__group">
+            <div class="step__item">
+              <p class="step__number">Build.</p>
+              <h3>Web Design & Development</h3>
+              <p class="step__content">
+                We dive in to learn about your health business and work together
+                to <strong>build a project blueprint</strong> that will define
+                the guidelines for our web design and development.
+              </p>
+              <a href="#" class="steps__link"
+                >What is the web design and development process?</a
+              >
+            </div>
+            <div class="step__item">
+              <p class="step__number">Maintain.</p>
+              <!-- <h3>Research</h3> -->
+              <h3>Website Maintenance & Hosting</h3>
+              <p class="step__content">
+                We break down your target market, competition, and current
+                challenges to build strategies that will
+                <strong>attract the traffic that matters.</strong>
+              </p>
+              <a href="#" class="steps__link"
+                >Why do I need maintenance & hosting?</a
+              >
+            </div>
+            <div class="step__item">
+              <p class="step__number">Grow.</p>
+              <h3>SEO & CRO</h3>
+              <p class="step__content">
+                We bundle up our mock-ups, designs, and research to launch a
+                <strong
+                  >beautiful, mobile-friendly, fully search engine and
+                  conversion rate optimized website
+                </strong>
+                that will drive your revenue.
+              </p>
+              <a href="#" class="steps__link"
+                >How to drive revenue with SEO and CRO.</a
               >
             </div>
           </div>
@@ -801,7 +878,7 @@ Conversion Optimization
         </div>
       </section>
 
-      <section class="testimonial__section section">
+      <!-- <section class="testimonial__section section">
         <div class="testimonial__container container">
           <div class="testimonial__card swiper-slide">
             <i class="bx bxl-yelp testimonial__icon"></i>
@@ -818,7 +895,7 @@ Conversion Optimization
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Create / Grow -->
     </main>
@@ -827,20 +904,36 @@ Conversion Optimization
       <div class="footer__container container">
         <div class="footer__company">
           <a href="#" class="footer__logo nav__header-item" id="nav-logo">
-            <i class="bx bx-square footer__logo-icon"></i> Rooper
+            <img
+              src="/assets/images/louis-biscuits-web-development-logo-orange-and-black.png"
+              alt="Louis Biscuits Web Development Logo"
+              class="header__logo"
+            />
+            <!-- <h1><span>L</span>ouis<span class="nl__title">B</span>iscuits</h1> -->
+            <!-- <h1>louis<span>biscuits</span></h1> -->
           </a>
+          <!-- <a href="#" class="footer__logo nav__header-item" id="nav-logo">
+            <i class="bx bx-square footer__logo-icon"></i> Rooper
+          </a> -->
           <div class="footer__company-details">
             <p class="footer__address">
               728 13th Street, Philadelphia, PA 19127
             </p>
             <p class="footer__number">(610) 945-8455</p>
-            <p class="footer__email">help@rooper.com</p>
           </div>
         </div>
 
-        <span class="footer__copy">&#169; Rooper. All rigths reserved</span>
+        <span class="footer__copy"
+          >&#169; Louis Biscuits. All rights reserved.</span
+        >
       </div>
     </footer>
+
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
 
     <!------------------------ Swiper JS -------------------->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>

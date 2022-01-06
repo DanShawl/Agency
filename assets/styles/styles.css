@@ -381,6 +381,18 @@ button {
   padding: 0.5rem 0;
 }
 
+.contact__btn a {
+  color: #fff;
+}
+
+.work__btn a {
+  color: #f5684f;
+}
+
+.work__btn-large {
+  font-size: 20px;
+}
+
 .active-link {
   color: #1988d2;
 }
@@ -389,12 +401,8 @@ button {
   height: 40px;
 }
 
-.home {
-  margin-bottom: 3rem;
-}
-
 .home__container {
-  height: 80vh;
+  height: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,9 +410,13 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .home__container p {
@@ -414,14 +426,17 @@ button {
 .home__container .home__description {
   color: #262626;
   max-width: 750px;
-  margin-bottom: 2rem;
-  font-weight: 500;
+  margin-bottom: 2.7rem;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.4rem;
 }
 
+.home__subtitle {
+  color: #595959;
+}
+
 .home__title {
-  max-width: 450px;
   font-size: 1.5rem;
 }
 
@@ -473,6 +488,41 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.home__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home__buttons .home__btn,
+.home__buttons .work__btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.home__buttons .work__btn {
+  margin-top: 2rem;
+}
+
+.work__btn {
+  background: none;
+  color: #f5684f;
+  font-weight: 500;
+}
+
+.work__btn:hover {
+  text-decoration: underline;
+  color: #e64f34;
 }
 
 .image__grid-container img {
@@ -957,7 +1007,7 @@ button {
 }
 
 .steps__info {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .steps__info h2 {
@@ -989,6 +1039,7 @@ button {
 }
 
 .step__item a {
+  font-weight: 500;
   position: absolute;
   bottom: 2rem;
   max-width: 80%;
@@ -1004,12 +1055,12 @@ button {
 .step__number {
   color: #f5684f;
   font-weight: 900;
-  font-size: 28px;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 767px) {
   .steps {
-    height: 1500px;
+    height: 1150px;
     padding-top: 3rem;
   }
   .steps__container {
@@ -1023,7 +1074,7 @@ button {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    height: 1200px;
+    height: 1000px;
   }
   .steps__group {
     max-width: 40%;
@@ -1115,8 +1166,16 @@ footer {
 
 @media screen and (min-width: 576px) {
   .home {
-    height: 100vh;
     margin-bottom: 0;
+  }
+  .home__container {
+    height: 70vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home__title {
+    font-size: 34px;
   }
   p {
     font-size: 16px;
@@ -1130,11 +1189,12 @@ footer {
     width: 60%;
   }
   .contact__btn {
-    width: 175px;
+    width: 230px;
     left: unset;
     right: 1.5rem;
     bottom: 1.5rem;
     border-radius: 2px;
+    padding: 0.7rem 0;
   }
   .contact__btn:hover {
     background: #e64f34;
@@ -1224,15 +1284,27 @@ footer {
     margin-right: 2rem;
   }
   .home__title {
-    max-width: 600px;
     font-size: 40px;
+  }
+  .home__buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home__buttons .work__btn {
+    margin-top: 0;
+    margin-left: 1.5rem;
   }
   h2 {
     font-size: 26px;
   }
   .home__container .home__description {
     font-size: 20px;
-    line-height: 1.75rem;
+    line-height: 2rem;
     max-width: 850px;
   }
   .discover__headshots img:nth-child(5) {
@@ -1371,15 +1443,19 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
+  .home__container {
+    height: 90vh;
+  }
   .home__info {
     text-align: center;
   }
   .home__title {
     margin: 0.75rem auto 1.5rem;
-    max-width: 1000px;
+    max-width: 800px;
     font-size: 52px;
   }
   .home__description {
+    margin-top: 2.5rem;
     margin-left: auto;
     margin-right: auto;
   }

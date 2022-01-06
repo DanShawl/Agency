@@ -442,6 +442,17 @@ button {
   padding: 0.5rem 0;
 }
 
+.contact__btn a {
+  color: #fff;
+}
+.work__btn a {
+  color: $first-color;
+}
+
+.work__btn-large {
+  font-size: 20px;
+}
+
 .active-link {
   color: $button-color;
 }
@@ -453,13 +464,17 @@ button {
 //  Home ------------------------------------------------
 
 .home {
-  margin-bottom: 3rem;
+  // margin-bottom: 3rem;
 }
 .home__container {
-  height: 80vh;
+  // height: 70vh;
+  height: 450px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
+  justify-content: flex-end;
+  align-items: center; // centered
+  text-align: center; // centered
   p {
     font-weight: $font-medium;
   }
@@ -467,20 +482,27 @@ button {
   .home__description {
     color: $title-color;
     max-width: 750px;
-    margin-bottom: 2rem;
-    font-weight: 500;
+    margin-bottom: 2.7rem;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.4rem;
   }
 }
-
+.home__subtitle {
+  color: $text-color;
+}
 .home__title {
-  max-width: 450px;
+  // max-width: 450px;
   font-size: $h1-font-size;
   // font-size: 30px;
+  // margin-bottom: 10rem;
   span {
     color: $first-color;
   }
+}
+
+.home__info {
+  // max-width: 90%;
 }
 
 .home__partners {
@@ -507,6 +529,33 @@ button {
       justify-content: center;
     }
   }
+}
+
+.home__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // width: max-content;
+
+  .home__btn,
+  .work__btn {
+    width: max-content;
+  }
+  .work__btn {
+    margin-top: 2rem;
+  }
+}
+.work__btn {
+  background: none;
+  color: $first-color;
+  // border-bottom: 2px solid $first-color;
+  font-weight: 500;
+  // margin-top: 2rem;
+}
+
+.work__btn:hover {
+  text-decoration: underline;
+  color: $first-color-alt;
 }
 
 // .home__btn {
@@ -1134,7 +1183,7 @@ button {
   button {
     display: none;
   }
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .step__item {
   position: relative;
@@ -1150,6 +1199,7 @@ button {
     color: $text-color;
   }
   a {
+    font-weight: 500;
     position: absolute;
     bottom: 2rem;
     max-width: 80%;
@@ -1166,7 +1216,8 @@ button {
 .step__number {
   color: $first-color;
   font-weight: 900;
-  font-size: 28px;
+  // font-size: 28px;
+  font-size: 16px;
 }
 
 .steps__description {
@@ -1176,7 +1227,7 @@ button {
 
 @media screen and (min-width: 767px) {
   .steps {
-    height: 1500px;
+    height: 1150px;
     padding-top: 3rem;
   }
   .steps__container {
@@ -1184,7 +1235,7 @@ button {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 1200px;
+    height: 1000px;
   }
 
   .steps__group {
@@ -1323,9 +1374,17 @@ footer {
 
 @media screen and (min-width: 576px) {
   .home {
-    height: 100vh;
+    // height: 80vh;
     margin-bottom: 0;
   }
+  .home__container {
+    height: 70vh;
+    justify-content: center;
+  }
+  .home__title {
+    font-size: 34px;
+  }
+
   p {
     font-size: 16px;
     font-weight: $font-medium;
@@ -1342,11 +1401,12 @@ footer {
   }
 
   .contact__btn {
-    width: 175px;
+    width: 230px;
     left: unset;
     right: 1.5rem;
     bottom: 1.5rem;
     border-radius: 2px;
+    padding: 0.7rem 0;
   }
   .contact__btn:hover {
     background: $first-color-alt;
@@ -1434,8 +1494,16 @@ footer {
     margin-right: $mg-2;
   }
   .home__title {
-    max-width: 600px;
+    // max-width: 600px;
     font-size: 40px;
+  }
+  .home__buttons {
+    flex-direction: row;
+    justify-content: center;
+    .work__btn {
+      margin-top: 0;
+      margin-left: 1.5rem;
+    }
   }
   h2 {
     font-size: 26px;
@@ -1446,7 +1514,7 @@ footer {
       // color: $text-color;
       // font-weight: 400;
       font-size: 20px;
-      line-height: 1.75rem;
+      line-height: 2rem;
       max-width: 850px;
     }
   }
@@ -1590,17 +1658,21 @@ footer {
     // justify-content: flex-end;
     // height: 85vh;
   }
+  .home__container {
+    height: 90vh;
+  }
 
   .home__info {
     text-align: center;
   }
   .home__title {
     margin: 0.75rem auto 1.5rem;
-    max-width: 1000px;
+    max-width: 800px;
     font-size: 52px;
   }
 
   .home__description {
+    margin-top: 2.5rem;
     margin-left: auto;
     margin-right: auto;
   }
