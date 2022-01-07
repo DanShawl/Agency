@@ -56,6 +56,10 @@ h2 {
   font-size: 28px;
 }
 
+h3 {
+  font-size: 22px;
+}
+
 p,
 span,
 button {
@@ -442,7 +446,7 @@ button {
 
 .home__title {
   margin-top: 1rem;
-  font-size: 30px;
+  font-size: 36px;
 }
 
 .home__title span {
