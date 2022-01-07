@@ -452,8 +452,47 @@ button {
   font-size: 34px;
 }
 
-.home__title span {
-  color: #f5684f;
+.home__title .circle-sketch-highlight {
+  position: relative;
+}
+
+.home__title .circle-sketch-highlight:before {
+  content: '';
+  z-index: -1;
+  left: -0.5em;
+  top: -0.1em;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #f5684f;
+  position: absolute;
+  border-right-color: transparent;
+  width: 100%;
+  height: 1em;
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+  opacity: 0.7;
+  border-radius: 50%;
+  padding: 0.1em 0.25em;
+}
+
+.home__title .circle-sketch-highlight:after {
+  content: '';
+  z-index: -1;
+  left: -0.5em;
+  top: 0.1em;
+  padding: 0.1em 0.25em;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #f5684f;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  position: absolute;
+  width: 100%;
+  height: 1em;
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg);
+  opacity: 0.7;
+  border-radius: 50%;
 }
 
 .home__partners {
@@ -523,7 +562,7 @@ button {
 }
 
 .home__buttons .work__btn {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .work__btn {
