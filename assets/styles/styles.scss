@@ -1248,7 +1248,7 @@ button {
 }
 .step__item {
   position: relative;
-  height: 376px;
+  height: 400px;
   background: #f3f3f1;
   margin-bottom: 3rem;
   padding: 2rem;
@@ -1334,7 +1334,7 @@ button {
 
 @media screen and (min-width: 767px) {
   .steps {
-    height: 1250px;
+    height: 1450px;
     padding-top: 3rem;
   }
   .steps__container {
@@ -1342,7 +1342,7 @@ button {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 1100px;
+    height: 1250px;
   }
 
   .steps__group {
