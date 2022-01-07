@@ -411,7 +411,7 @@ button {
 }
 
 .home__container {
-  height: 475px;
+  height: 520px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1034,7 +1034,7 @@ button {
 
 .step__item {
   position: relative;
-  height: 350px;
+  height: 376px;
   background: #f3f3f1;
   margin-bottom: 3rem;
   padding: 2rem;
@@ -1650,13 +1650,16 @@ footer {
 }
 
 @media screen and (max-width: 412px) {
-  .home__buttons button a {
-    font-size: 12px;
+  .home__buttons a {
+    font-size: 14px;
+  }
+  .home__buttons {
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 370px) {
-  .home__buttons button a {
+  .home__buttons a {
     font-size: 10px;
   }
   .home__buttons .work__btn a {
