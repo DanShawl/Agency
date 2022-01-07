@@ -47,7 +47,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: #262626;
+  color: #454545;
   font-weight: 700;
   letter-spacing: 0.4px;
 }
@@ -200,7 +200,7 @@ button {
 .nav__logo,
 .nav__toggle,
 .nav__callBtn {
-  color: #262626;
+  color: #454545;
 }
 
 .nav__callBtn {
@@ -216,7 +216,7 @@ button {
 }
 
 .nav__close {
-  color: #262626;
+  color: #454545;
 }
 
 .nav__logo,
@@ -249,7 +249,7 @@ button {
       -ms-flex-align: baseline;
           align-items: baseline;
   font-family: "Urbanist", sans-serif;
-  color: #262626;
+  color: #454545;
   font-weight: 300;
   font-family: 'Outfit', sans-serif;
 }
@@ -320,7 +320,7 @@ button {
 }
 
 .nav__link {
-  color: #262626;
+  color: #454545;
   font-weight: 700;
   /* text-transform: uppercase; */
   font-size: 20px;
@@ -433,7 +433,7 @@ button {
 }
 
 .home__container .home__description {
-  color: #262626;
+  color: #454545;
   max-width: 750px;
   margin-bottom: 2.7rem;
   font-weight: 400;
@@ -572,7 +572,7 @@ button {
 
 .testimonial__icon {
   font-size: 2.75rem;
-  color: #262626;
+  color: #454545;
 }
 
 .testimonial__info {
@@ -589,7 +589,7 @@ button {
 .testimonial__name {
   font-size: 1rem;
   font-weight: 500;
-  color: #262626;
+  color: #454545;
 }
 
 .testimonial__link {
@@ -756,7 +756,7 @@ button {
 }
 
 .tm__name span {
-  color: #262626;
+  color: #454545;
   font-weight: 700;
 }
 
@@ -1218,7 +1218,7 @@ footer {
 
 .footer__logo,
 .footer__logo-icon {
-  color: #262626;
+  color: #454545;
 }
 
 .footer__logo {
@@ -1494,7 +1494,7 @@ footer {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.75rem;
-    color: #262626;
+    color: #454545;
   }
   .home {
     display: -webkit-box;
