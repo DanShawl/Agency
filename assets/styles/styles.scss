@@ -450,7 +450,7 @@ button {
 }
 
 .work__btn-large {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .active-link {
@@ -492,6 +492,7 @@ button {
   color: $text-color;
 }
 .home__title {
+  margin-top: 1rem;
   // max-width: 450px;
   font-size: $h1-font-size;
   // font-size: 30px;
@@ -891,8 +892,8 @@ button {
 
 //  Discover ---------------------------------------------
 .discover {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 .discover__container {
   // width: 100%;
@@ -1168,7 +1169,7 @@ button {
     color: $first-color;
   }
 }
-
+// Steps ------------------------------------------------------------
 .steps {
   padding-top: 3rem;
 }
@@ -1187,7 +1188,7 @@ button {
 }
 .step__item {
   position: relative;
-  height: 300px;
+  height: 350px;
   background: #f3f3f1;
   margin-bottom: 3rem;
   padding: 2rem;
@@ -1225,9 +1226,55 @@ button {
   // color: $text-color;
 }
 
+.who__container {
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  // width: 60%;
+  // max-width: 500px;
+  h2 {
+    margin-bottom: 1rem;
+    max-width: 450px;
+  }
+  p {
+    font-size: 14px;
+  }
+  p a {
+    font-size: 14px;
+    color: $first-color;
+  }
+}
+.who-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0 2rem;
+  max-width: 600px;
+
+  li {
+    background: #f3f3f1;
+    padding: 0.75rem 1rem;
+    margin: 0.25rem 0.25rem;
+    font-size: 12px;
+    // text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.025rem;
+    // margin-right: 0.25rem;
+  }
+}
+
+// .steps__who-item::after {
+//   content: '|';
+//   margin: 0 0.5rem;
+// }
+
 @media screen and (min-width: 767px) {
   .steps {
-    height: 1150px;
+    height: 1250px;
     padding-top: 3rem;
   }
   .steps__container {
@@ -1235,7 +1282,7 @@ button {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 1000px;
+    height: 1100px;
   }
 
   .steps__group {
@@ -1757,6 +1804,24 @@ footer {
     //   display: block;
     // }
   }
+  .who__container {
+    h2 {
+      max-width: 700px;
+    }
+    .who-group {
+      max-width: 800px;
+    }
+    li {
+      font-size: 18px;
+      margin: 0.35rem;
+    }
+    p {
+      font-size: 16px;
+    }
+    p a {
+      font-size: 16px;
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1796,5 +1861,19 @@ footer {
   .projects-swiper {
     max-width: 1340px;
     // overflow: visible;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .home__buttons button a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .home__buttons button a {
+    font-size: 10px;
+  }
+  .home__buttons .work__btn a {
+    font-size: 13px;
   }
 }

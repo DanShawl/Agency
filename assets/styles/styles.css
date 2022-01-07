@@ -390,7 +390,7 @@ button {
 }
 
 .work__btn-large {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .active-link {
@@ -437,6 +437,7 @@ button {
 }
 
 .home__title {
+  margin-top: 1rem;
   font-size: 1.5rem;
 }
 
@@ -760,8 +761,8 @@ button {
 }
 
 .discover {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .discover__container {
@@ -1024,7 +1025,7 @@ button {
 
 .step__item {
   position: relative;
-  height: 300px;
+  height: 350px;
   background: #f3f3f1;
   margin-bottom: 3rem;
   padding: 2rem;
@@ -1058,9 +1059,64 @@ button {
   font-size: 16px;
 }
 
+.who__container {
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.who__container h2 {
+  margin-bottom: 1rem;
+  max-width: 450px;
+}
+
+.who__container p {
+  font-size: 14px;
+}
+
+.who__container p a {
+  font-size: 14px;
+  color: #f5684f;
+}
+
+.who-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem 0 2rem;
+  max-width: 600px;
+}
+
+.who-group li {
+  background: #f3f3f1;
+  padding: 0.75rem 1rem;
+  margin: 0.25rem 0.25rem;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.025rem;
+}
+
 @media screen and (min-width: 767px) {
   .steps {
-    height: 1150px;
+    height: 1250px;
     padding-top: 3rem;
   }
   .steps__container {
@@ -1074,7 +1130,7 @@ button {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    height: 1000px;
+    height: 1100px;
   }
   .steps__group {
     max-width: 40%;
@@ -1529,6 +1585,22 @@ footer {
   .how__images img {
     height: 500px;
   }
+  .who__container h2 {
+    max-width: 700px;
+  }
+  .who__container .who-group {
+    max-width: 800px;
+  }
+  .who__container li {
+    font-size: 18px;
+    margin: 0.35rem;
+  }
+  .who__container p {
+    font-size: 16px;
+  }
+  .who__container p a {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1565,6 +1637,21 @@ footer {
   }
   .projects-swiper {
     max-width: 1340px;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .home__buttons button a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .home__buttons button a {
+    font-size: 10px;
+  }
+  .home__buttons .work__btn a {
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
