@@ -468,7 +468,7 @@ button {
 }
 .home__container {
   // height: 70vh;
-  height: 450px;
+  height: 550px;
   display: flex;
   flex-direction: column;
   // justify-content: center;
@@ -489,12 +489,13 @@ button {
   }
 }
 .home__subtitle {
+  // margin-top: 5rem;
   color: $text-color;
 }
 .home__title {
   margin-top: 1rem;
   // max-width: 450px;
-  font-size: $h1-font-size;
+  font-size: 30px;
   // font-size: 30px;
   // margin-bottom: 10rem;
   span {

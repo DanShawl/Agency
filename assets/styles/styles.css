@@ -402,7 +402,7 @@ button {
 }
 
 .home__container {
-  height: 450px;
+  height: 550px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -438,7 +438,7 @@ button {
 
 .home__title {
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 30px;
 }
 
 .home__title span {
