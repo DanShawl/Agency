@@ -637,12 +637,13 @@ button {
 //  Image Grid ---------------------------------------------
 
 .image__grid-container {
+  margin-top: 4rem;
   img {
     width: 100%;
     padding: 0 1.5rem;
     object-fit: cover;
     aspect-ratio: 1/0.75;
-    display: none;
+    // display: none;
   }
   img:nth-child(2) {
     display: none;
@@ -1454,7 +1455,8 @@ button {
   align-items: center;
   text-align: center;
   margin-bottom: 2rem;
-  margin: 0 1rem 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
   h2 {
     margin-bottom: 1rem;
   }
