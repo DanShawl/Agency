@@ -28,6 +28,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800;900&family=Righteous&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
 //  Variables
 
 // :root {
@@ -316,7 +320,7 @@ button {
 
 .nav__logo h1 {
   margin-right: 3rem;
-  font-size: 20px;
+  font-size: 40px;
   display: flex;
   align-items: baseline;
   // column-gap: 0.3rem;
@@ -334,11 +338,11 @@ button {
   // font-family: 'Space Grotesk', sans-serif;
   // font-family: 'Spartan', sans-serif;
   // font-family: 'Dosis', san-serif;
-  // font-family: 'Baloo 2', cursive;
   // font-family: 'Fredoka One', cursive;
-  // font-family: 'Lilita One', cursive;
   // font-family: 'Cardo', serif;
-  font-family: 'Outfit', sans-serif;
+  // font-family: 'Outfit', sans-serif;
+  // font-family: 'Righteous', cursive;
+  font-family: 'Waterfall', cursive;
 }
 
 .nav__logo span {
@@ -346,8 +350,9 @@ button {
   font-weight: 700;
   font-size: 21px;
   letter-spacing: 0.025rem;
+  // font-family: 'Waterfall', cursive;
   // font-family: 'Cardo', serif;
-  // font-family: 'Outfit', sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 // .nav__logo span {
 //   font-size: 24px;
@@ -455,7 +460,7 @@ button {
   color: #fff;
   font-weight: $font-bold;
   font-size: 0.875rem;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   transition: 0.3s;
   position: fixed;
   left: 0;
@@ -487,7 +492,11 @@ button {
 //  Home ------------------------------------------------
 
 .home {
-  // margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f3f3f1;
+  // z-index: -2;
+
+  // background-color: #f8f8f8;
 }
 .home__container {
   // height: 70vh;
@@ -517,6 +526,7 @@ button {
 }
 .home__title {
   margin-top: 1rem;
+  // z-index: 5;
   // max-width: 450px;
   font-size: 34px;
   // font-size: 30px;
@@ -536,9 +546,9 @@ button {
 
   .circle-sketch-highlight:before {
     content: '';
-    z-index: -1;
+    // z-index: -1;
     left: -0.5em;
-    top: -0.1em;
+    top: -0.02em;
     border-width: 2px;
     border-style: solid;
     border-color: $first-color;
@@ -554,7 +564,7 @@ button {
 
   .circle-sketch-highlight:after {
     content: '';
-    z-index: -1;
+    // z-index: -1;
     left: -0.5em;
     top: 0.1em;
     padding: 0.1em 0.25em;
