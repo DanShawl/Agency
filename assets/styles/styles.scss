@@ -26,6 +26,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&display=swap');
 //  Variables
 
 // :root {
@@ -35,7 +37,11 @@ $header-height: 3.5rem;
 // $first-color: hsl(204, 100%, 68%);
 // $first-color: rgb(253, 167, 55);
 // $first-color: rgb(245, 159, 79);
-$first-color: rgb(245, 104, 79);
+
+// $first-color: rgb(245, 104, 79);
+
+$first-color: #f16232;
+// $first-color: #f26e40;
 $first-color-alt: rgb(230, 79, 52);
 $first-color-bg: rgb(255, 246, 245);
 
@@ -242,7 +248,7 @@ button {
   font-weight: $font-bold;
   font-size: 0.875rem;
   border-radius: 2px;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   transition: 0.3s;
 }
 
@@ -315,13 +321,13 @@ button {
   align-items: baseline;
   // column-gap: 0.3rem;
 
-  font-family: $body-font;
+  // font-family: $body-font;
 
   // color: $first-color;
   // font-weight: 900;
   color: $title-color;
   font-weight: 300;
-  font-family: 'Outfit', sans-serif;
+  // font-family: 'Outfit', sans-serif;
   // font-family: 'Sora', sans-serif;
   // font-family: 'Lexend Deca', sans-serif;
   // font-family: 'Red Hat Text', sans-serif;
@@ -331,13 +337,17 @@ button {
   // font-family: 'Baloo 2', cursive;
   // font-family: 'Fredoka One', cursive;
   // font-family: 'Lilita One', cursive;
+  // font-family: 'Cardo', serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 .nav__logo span {
-  color: $first-color;
+  // color: $first-color;
   font-weight: 700;
   font-size: 21px;
   letter-spacing: 0.025rem;
+  // font-family: 'Cardo', serif;
+  // font-family: 'Outfit', sans-serif;
 }
 // .nav__logo span {
 //   font-size: 24px;
@@ -852,7 +862,8 @@ button {
   font-size: 12px;
 }
 .tm__name span {
-  color: $title-color;
+  // color: $title-color;
+  color: $first-color;
   font-weight: $font-bold;
   // font-size: 12px;
 }
@@ -1247,8 +1258,11 @@ button {
   margin-bottom: 4rem;
 }
 .step__item {
-  position: relative;
-  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  // height: 400px;
   background: #f3f3f1;
   margin-bottom: 3rem;
   padding: 2rem;
@@ -1260,9 +1274,8 @@ button {
     color: $text-color;
   }
   a {
+    margin-top: 3rem;
     font-weight: 500;
-    position: absolute;
-    bottom: 2rem;
     max-width: 80%;
     color: $first-color;
     padding-bottom: 0.25rem;
@@ -1334,15 +1347,15 @@ button {
 
 @media screen and (min-width: 767px) {
   .steps {
-    height: 1450px;
-    padding-top: 3rem;
+    height: 1500px;
+    padding-top: 8rem;
   }
   .steps__container {
     position: absolute;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 1250px;
+    height: 1150px;
   }
 
   .steps__group {
@@ -1351,11 +1364,31 @@ button {
   .steps__info {
     max-width: 40%;
     position: sticky;
+    position: -webkit-sticky;
+    display: block;
     top: 12rem;
     margin-right: 5rem;
     button {
       display: block;
     }
+  }
+  .our__work {
+    margin-bottom: 6rem;
+  }
+}
+@media screen and (min-width: 915px) {
+  .steps {
+    height: 1400px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .steps {
+    height: 1450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .steps {
+    height: 1350px;
   }
 }
 
@@ -1409,6 +1442,36 @@ button {
 //     padding-bottom: 0.25rem;
 //   }
 // }
+.our__work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.our__work-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  h2 {
+    margin-bottom: 1rem;
+  }
+  p {
+    max-width: 80%;
+  }
+}
+
+.our__work-images {
+  display: flex;
+  flex-direction: column;
+  img {
+    height: auto;
+    width: auto;
+
+    // max-width: 200px;
+  }
+}
 
 // How it works ----------------------------------------------------
 
@@ -1460,6 +1523,25 @@ button {
   margin-bottom: $mg-3;
 }
 
+//  Footer CTA ---------------------------------------------
+.footer__cta {
+  margin: 3rem 0;
+}
+.footer__cta-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  h1 {
+    font-size: 36px;
+    margin-bottom: 1rem;
+  }
+  p {
+    margin-bottom: 2rem;
+    max-width: 750px;
+  }
+}
 //  Footer ---------------------------------------------
 
 footer {
@@ -1591,6 +1673,16 @@ footer {
   .discover__headshots {
     img:nth-child(4) {
       display: initial;
+    }
+  }
+  .our__work-images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+    img {
+      max-width: 45%;
     }
   }
 }
@@ -1864,6 +1956,9 @@ footer {
     //   display: block;
     // }
   }
+  .who {
+    margin-bottom: 8rem;
+  }
   .who__container {
     h2 {
       max-width: 700px;
@@ -1891,6 +1986,13 @@ footer {
   .projects-swiper {
     max-width: 1220px;
     // overflow: visible;
+  }
+  .our__work-images {
+    img {
+      // height: 300px;
+      object-fit: cover;
+      max-width: 30%;
+    }
   }
 }
 
