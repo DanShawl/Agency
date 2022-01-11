@@ -81,6 +81,7 @@ ul {
 a {
   text-decoration: none;
   cursor: pointer;
+  letter-spacing: 0.04rem;
 }
 
 img {
@@ -244,7 +245,7 @@ button {
 
 .nav__logo h1 {
   margin-right: 3rem;
-  font-size: 40px;
+  font-size: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,7 +259,7 @@ button {
 
 .nav__logo span {
   font-weight: 700;
-  font-size: 21px;
+  font-size: 16px;
   letter-spacing: 0.025rem;
   font-family: 'Outfit', sans-serif;
 }
@@ -413,7 +414,7 @@ button {
 }
 
 .home {
-  padding-bottom: 3rem;
+  padding-bottom: 7rem;
   background-color: #f3f3f1;
 }
 
