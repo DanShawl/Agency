@@ -1253,6 +1253,7 @@ button {
           align-items: center;
   text-align: center;
   margin-bottom: 2rem;
+  margin: 0 1rem;
 }
 
 .our__work-info h2 {
