@@ -49,54 +49,54 @@ const changeHeader = () => {
 
 window.addEventListener('scroll', changeHeader);
 
-let testimonialSwiper = new Swiper('.testimonial-swiper', {
-  spaceBetween: 30,
-  loop: 'true',
-  autoplay: {
-    delay: 5000,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+// let testimonialSwiper = new Swiper('.testimonial-swiper', {
+//   spaceBetween: 30,
+//   loop: 'true',
+//   autoplay: {
+//     delay: 5000,
+//   },
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+// });
 
-let projectsSwiper = new Swiper('.projects-swiper', {
-  spaceBetween: 20,
-  // loop: 'true',
-  slidesPerView: 'auto',
-  centeredSlides: 'true',
-  // freeMode: 'true',
+// let projectsSwiper = new Swiper('.projects-swiper', {
+//   spaceBetween: 20,
+//   // loop: 'true',
+//   slidesPerView: 'auto',
+//   centeredSlides: 'true',
+//   // freeMode: 'true',
 
-  breakpoints: {
-    // 0: {
-    //   centeredSlides: 'true',
-    // },
+//   breakpoints: {
+//     // 0: {
+//     //   centeredSlides: 'true',
+//     // },
 
-    576: {
-      slidesPerView: 1.75,
-      centeredSlides: false,
-    },
-    768: {
-      slidesPerView: 2.5,
-      centeredSlides: false,
-    },
-    1024: {
-      spaceBetween: 30,
-      slidesPerView: 2,
-      // slidesPerView: 1.25,
-      centeredSlides: false,
-    },
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  // pagination: {
-  //   el: '.swiper-pagination',
-  //   clickable: true,
-  // },
-});
+//     576: {
+//       slidesPerView: 1.75,
+//       centeredSlides: false,
+//     },
+//     768: {
+//       slidesPerView: 2.5,
+//       centeredSlides: false,
+//     },
+//     1024: {
+//       spaceBetween: 30,
+//       slidesPerView: 2,
+//       // slidesPerView: 1.25,
+//       centeredSlides: false,
+//     },
+//   },
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+//   // pagination: {
+//   //   el: '.swiper-pagination',
+//   //   clickable: true,
+//   // },
+// });
 
 // const how1 = document.getElementById('how1');
 // const how2 = document.getElementById('how2');
