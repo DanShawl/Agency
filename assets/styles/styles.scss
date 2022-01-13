@@ -381,6 +381,10 @@ button {
   cursor: pointer;
 }
 
+li .nav__logo {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
@@ -389,13 +393,16 @@ button {
     right: -100%;
     width: 100%;
     height: 100%;
-    padding: 5rem 2rem 1.5rem;
+    padding: 1rem 2rem 1.5rem;
     transition: 0.5s;
     box-shadow: 0 1px 4px hsla(0, 4%, 15%, 0.1);
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+  li .nav__logo {
+    display: block;
   }
 }
 
@@ -412,9 +419,12 @@ button {
   color: $title-color;
   font-weight: $font-bold;
   /* text-transform: uppercase; */
-  font-size: 20px;
+  font-size: 28px;
   transition: 0.1s;
   // margin-bottom: 5rem;
+  span {
+    color: $first-color;
+  }
 }
 
 .nav__link:hover {
@@ -587,6 +597,12 @@ button {
     transform: rotate(-1deg);
     opacity: 0.7;
     border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .home__title {
+    font-size: 44px;
   }
 }
 
@@ -1301,19 +1317,20 @@ button {
     max-width: 80%;
     color: $first-color;
     padding-bottom: 0.25rem;
+    cursor: initial;
   }
 }
 
 .step__item a:hover {
-  color: $first-color-alt;
-  text-decoration: underline;
+  // color: $first-color-alt;
+  // text-decoration: underline;
 }
 
 .step__number {
   color: $first-color;
   font-weight: 900;
   // font-size: 28px;
-  font-size: 16px;
+  font-size: 22px;
 }
 
 .steps__description {

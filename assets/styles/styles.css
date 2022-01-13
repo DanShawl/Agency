@@ -281,6 +281,10 @@ button {
   cursor: pointer;
 }
 
+li .nav__logo {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
@@ -289,7 +293,7 @@ button {
     right: -100%;
     width: 100%;
     height: 100%;
-    padding: 5rem 2rem 1.5rem;
+    padding: 1rem 2rem 1.5rem;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     -webkit-box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
@@ -304,6 +308,9 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  li .nav__logo {
+    display: block;
   }
 }
 
@@ -327,9 +334,13 @@ button {
   color: #454545;
   font-weight: 700;
   /* text-transform: uppercase; */
-  font-size: 20px;
+  font-size: 28px;
   -webkit-transition: 0.1s;
   transition: 0.1s;
+}
+
+.nav__link span {
+  color: #f16232;
 }
 
 .nav__link:hover {
@@ -499,6 +510,12 @@ button {
           transform: rotate(-1deg);
   opacity: 0.7;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 376px) {
+  .home__title {
+    font-size: 44px;
+  }
 }
 
 .home__partners {
@@ -1116,17 +1133,13 @@ button {
   max-width: 80%;
   color: #f16232;
   padding-bottom: 0.25rem;
-}
-
-.step__item a:hover {
-  color: #e64f34;
-  text-decoration: underline;
+  cursor: initial;
 }
 
 .step__number {
   color: #f16232;
   font-weight: 900;
-  font-size: 16px;
+  font-size: 22px;
 }
 
 .who__container {
