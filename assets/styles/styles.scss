@@ -508,7 +508,7 @@ button {
 }
 .home__container {
   // height: 70vh;
-  height: 520px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   // justify-content: center;
@@ -536,7 +536,7 @@ button {
   margin-top: 1rem;
   // z-index: 5;
   // max-width: 450px;
-  font-size: 34px;
+  font-size: 45px;
   // font-size: 30px;
   // margin-bottom: 10rem;
 
@@ -629,6 +629,9 @@ button {
   .home__btn,
   .work__btn {
     width: max-content;
+  }
+  .home__btn span {
+    color: rgba(255, 255, 255, 0.658);
   }
   .work__btn {
     margin-top: 1rem;

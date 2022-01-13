@@ -421,7 +421,7 @@ button {
 }
 
 .home__container {
-  height: 520px;
+  height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -457,7 +457,7 @@ button {
 
 .home__title {
   margin-top: 1rem;
-  font-size: 34px;
+  font-size: 45px;
 }
 
 .home__title .circle-sketch-highlight {
@@ -565,6 +565,10 @@ button {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+}
+
+.home__buttons .home__btn span {
+  color: rgba(255, 255, 255, 0.658);
 }
 
 .home__buttons .work__btn {
