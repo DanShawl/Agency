@@ -321,7 +321,7 @@ button {
 
 .nav__logo h1 {
   margin-right: 3rem;
-  font-size: 30px;
+  font-size: 22px;
   display: flex;
   align-items: baseline;
   // column-gap: 0.3rem;
@@ -331,7 +331,8 @@ button {
   // color: $first-color;
   // font-weight: 900;
   color: $title-color;
-  font-weight: 300;
+  // color: $first-color;
+  // font-weight: 300;
   // font-family: 'Outfit', sans-serif;
   // font-family: 'Sora', sans-serif;
   // font-family: 'Lexend Deca', sans-serif;
@@ -343,17 +344,18 @@ button {
   // font-family: 'Cardo', serif;
   // font-family: 'Outfit', sans-serif;
   // font-family: 'Righteous', cursive;
-  font-family: 'Waterfall', cursive;
+  // font-family: 'Waterfall', cursive;
+  $body-font: 'Urbanist', sans-serif;
 }
 
 .nav__logo span {
   // color: $first-color;
   font-weight: 700;
-  font-size: 16px;
+  // font-size: 16px;
   letter-spacing: 0.025rem;
   // font-family: 'Waterfall', cursive;
   // font-family: 'Cardo', serif;
-  font-family: 'Outfit', sans-serif;
+  // font-family: 'Outfit', sans-serif;
 }
 // .nav__logo span {
 //   font-size: 24px;
@@ -363,6 +365,10 @@ button {
 //   // margin-left: 0.225rem;
 //   // margin-right: 0.05rem;
 // }
+.nav__logo-subtitle {
+  font-size: 12px;
+  color: $first-color;
+}
 
 .nav__btns {
   display: flex;
@@ -488,6 +494,7 @@ button {
 
 .header__logo {
   height: 40px;
+  margin-right: 0.25rem;
 }
 
 //  Home ------------------------------------------------
@@ -1400,7 +1407,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .steps {
-    height: 1350px;
+    height: 1250px;
   }
 }
 
@@ -1455,6 +1462,7 @@ button {
 //   }
 // }
 .our__work {
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1477,6 +1485,7 @@ button {
 }
 
 .our__work-images {
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   img {
@@ -1868,6 +1877,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 0;
+
     // justify-content: flex-end;
     // height: 85vh;
   }

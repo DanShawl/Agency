@@ -245,7 +245,7 @@ button {
 
 .nav__logo h1 {
   margin-right: 3rem;
-  font-size: 30px;
+  font-size: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,15 +253,16 @@ button {
       -ms-flex-align: baseline;
           align-items: baseline;
   color: #454545;
-  font-weight: 300;
-  font-family: 'Waterfall', cursive;
 }
 
 .nav__logo span {
   font-weight: 700;
-  font-size: 16px;
   letter-spacing: 0.025rem;
-  font-family: 'Outfit', sans-serif;
+}
+
+.nav__logo-subtitle {
+  font-size: 12px;
+  color: #f16232;
 }
 
 .nav__btns {
@@ -411,6 +412,7 @@ button {
 
 .header__logo {
   height: 40px;
+  margin-right: 0.25rem;
 }
 
 .home {
@@ -1229,11 +1231,12 @@ button {
 
 @media screen and (min-width: 1200px) {
   .steps {
-    height: 1350px;
+    height: 1250px;
   }
 }
 
 .our__work {
+  margin-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1275,6 +1278,7 @@ button {
 }
 
 .our__work-images {
+  margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1687,6 +1691,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-bottom: 0;
   }
   .home__container {
     height: 90vh;
