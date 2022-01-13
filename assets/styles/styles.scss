@@ -468,7 +468,8 @@ li .nav__logo {
   }
 }
 .home__subtitle {
-  color: $text-color;
+  // color: $text-color;
+  color: $first-color;
 }
 .home__title {
   margin-top: 1rem;
@@ -1535,7 +1536,16 @@ footer {
   .container {
     max-width: 1200px;
   }
-
+  .home__title {
+    font-size: 66px;
+    max-width: 1000px;
+  }
+  .home__subtitle {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 50px;
+  }
   .benefits__section {
     display: flex;
     align-items: center;

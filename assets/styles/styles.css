@@ -444,7 +444,7 @@ li .nav__logo {
 }
 
 .home__subtitle {
-  color: #595959;
+  color: #f16232;
 }
 
 .home__title {
@@ -1636,6 +1636,16 @@ footer {
 @media screen and (min-width: 1400px) {
   .container {
     max-width: 1200px;
+  }
+  .home__title {
+    font-size: 66px;
+    max-width: 1000px;
+  }
+  .home__subtitle {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 50px;
   }
   .benefits__section {
     display: -webkit-box;
