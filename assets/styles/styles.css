@@ -104,10 +104,6 @@ button {
   margin-bottom: 1rem;
 }
 
-.main {
-  overflow: hidden;
-}
-
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -259,7 +255,7 @@ button {
 }
 
 .nav__toggle {
-  font-size: 1.25rem;
+  font-size: 1.8rem;
   cursor: pointer;
 }
 
@@ -267,7 +263,7 @@ li .nav__logo {
   display: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .nav__menu {
     position: fixed;
     background-color: #fcfcfc;
@@ -352,7 +348,7 @@ li .nav__logo {
 }
 
 .nav__close {
-  font-size: 1.75rem;
+  font-size: 2rem;
   position: absolute;
   top: 0.9rem;
   right: 1.25rem;
@@ -1380,7 +1376,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 800px) {
   .nav {
     height: calc($header-height + 1rem);
     -webkit-box-pack: start;
@@ -1569,10 +1565,6 @@ footer {
   .swiper-btns {
     display: initial;
   }
-  .projects-swiper {
-    max-width: 1100px;
-    overflow: visible;
-  }
   .discover__description {
     max-width: 725px;
   }
@@ -1687,5 +1679,11 @@ footer {
   .home__buttons .work__btn a {
     font-size: 13px;
   }
+}
+
+.sticky {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=styles.css.map */
