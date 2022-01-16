@@ -263,7 +263,7 @@ li .nav__logo {
   display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
   .nav__menu {
     position: fixed;
     background-color: #fcfcfc;
@@ -581,6 +581,7 @@ li .nav__logo {
 }
 
 .image__grid-container {
+  overflow: hidden;
   margin-top: 4rem;
 }
 
@@ -1215,15 +1216,16 @@ footer {
 @media screen and (min-width: 576px) {
   .home {
     margin-bottom: 0;
+    padding-bottom: 0;
   }
   .home__container {
-    height: 70vh;
+    height: 80vh;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
   .home__title {
-    font-size: 34px;
+    font-size: 52px;
   }
   p {
     font-size: 16px;
@@ -1296,13 +1298,6 @@ footer {
   .benefits__subtitle {
     max-width: 450px;
   }
-  .projects-swiper {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  .projects__description {
-    max-width: 525px;
-  }
   .services__group {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1348,7 +1343,7 @@ footer {
     margin-right: 2rem;
   }
   .home__title {
-    font-size: 40px;
+    font-size: 62px;
   }
   .home__buttons {
     -webkit-box-orient: horizontal;
@@ -1364,7 +1359,7 @@ footer {
     margin-left: 1.5rem;
   }
   h2 {
-    font-size: 26px;
+    font-size: 30px;
   }
   .home__container .home__description {
     font-size: 20px;
@@ -1376,7 +1371,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 820px) {
   .nav {
     height: calc($header-height + 1rem);
     -webkit-box-pack: start;
@@ -1460,9 +1455,6 @@ footer {
   .tm__img-container {
     margin-top: -8rem;
   }
-  .projects__description {
-    max-width: 650px;
-  }
   .services__group {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1517,7 +1509,7 @@ footer {
   .home__title {
     margin: 0.75rem auto 1.5rem;
     max-width: 800px;
-    font-size: 52px;
+    font-size: 60px;
   }
   .home__description {
     margin-top: 2.5rem;
@@ -1553,14 +1545,6 @@ footer {
             justify-content: flex-start;
     -webkit-column-gap: 6rem;
             column-gap: 6rem;
-  }
-  .projects-swiper {
-    padding-top: 5rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-  .project__data {
-    left: 2rem;
   }
   .swiper-btns {
     display: initial;
@@ -1615,9 +1599,6 @@ footer {
   .container {
     max-width: 1100px;
   }
-  .projects-swiper {
-    max-width: 1220px;
-  }
   .our__work-images img {
     -o-object-fit: cover;
        object-fit: cover;
@@ -1658,9 +1639,6 @@ footer {
   .benefits__info {
     width: 1300px;
   }
-  .projects-swiper {
-    max-width: 1340px;
-  }
 }
 
 @media screen and (max-width: 412px) {
@@ -1679,11 +1657,5 @@ footer {
   .home__buttons .work__btn a {
     font-size: 13px;
   }
-}
-
-.sticky {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 /*# sourceMappingURL=styles.css.map */
