@@ -1419,6 +1419,7 @@ footer {
     height: 85vh;
   }
   .home__container {
+    padding-top: 6rem;
     height: 70vh;
   }
   .home__partners {
@@ -1501,6 +1502,7 @@ footer {
     padding-bottom: 0;
   }
   .home__container {
+    padding-top: 0;
     height: 90vh;
   }
   .home__info {
