@@ -445,6 +445,7 @@ li .nav__logo {
 //  Home ------------------------------------------------
 
 .home {
+  padding-top: 5em;
   padding-bottom: 7rem;
   background-color: #f3f3f1;
 }
@@ -452,7 +453,7 @@ li .nav__logo {
   height: 600px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center; // centered
   text-align: center; // centered
   p {
@@ -876,7 +877,7 @@ li .nav__logo {
 .steps__title {
   margin-top: 2rem;
   // margin-bottom: 3rem;
-  max-width: 600px;
+  max-width: 650px;
 }
 .steps__info {
   h2 {
@@ -1103,6 +1104,7 @@ footer {
 
 @media screen and (min-width: 576px) {
   .home {
+    padding-top: 0;
     // height: 80vh;
     margin-bottom: 0;
     padding-bottom: 0;

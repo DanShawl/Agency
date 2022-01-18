@@ -405,6 +405,7 @@ li .nav__logo {
 }
 
 .home {
+  padding-top: 5em;
   padding-bottom: 7rem;
   background-color: #f3f3f1;
 }
@@ -418,9 +419,9 @@ li .nav__logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -935,7 +936,7 @@ li .nav__logo {
 
 .steps__title {
   margin-top: 2rem;
-  max-width: 600px;
+  max-width: 650px;
 }
 
 .steps__info {
@@ -1217,6 +1218,7 @@ footer {
 
 @media screen and (min-width: 576px) {
   .home {
+    padding-top: 0;
     margin-bottom: 0;
     padding-bottom: 0;
   }
