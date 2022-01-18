@@ -119,6 +119,7 @@ h4 {
 
 h2 {
   font-size: 28px;
+  max-width: 600px;
 }
 
 h3 {
@@ -668,9 +669,9 @@ li .nav__logo {
   }
 }
 
-.benefits__title {
-  max-width: 700px;
-}
+// .benefits__title {
+// max-width: 700px;
+// }
 .benefits__description {
   margin-top: 2rem;
   margin-bottom: 2.25rem;
@@ -874,6 +875,8 @@ li .nav__logo {
 }
 .steps__title {
   margin-top: 2rem;
+  // margin-bottom: 3rem;
+  max-width: 600px;
 }
 .steps__info {
   h2 {
@@ -1112,7 +1115,7 @@ footer {
     font-size: 52px;
   }
   h2 {
-    font-size: 44px;
+    font-size: 50px;
   }
 
   p {
@@ -1150,6 +1153,10 @@ footer {
       // flex: 1;
     }
   }
+
+  // .steps__title {
+  //   margin-bottom: 3rem;
+  // }
 
   .image__grid-container {
     display: flex;
