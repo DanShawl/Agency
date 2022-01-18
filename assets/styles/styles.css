@@ -936,6 +936,10 @@ li .nav__logo {
   padding-top: 3rem;
 }
 
+.steps__title {
+  margin-top: 2rem;
+}
+
 .steps__info {
   margin-bottom: 4rem;
 }
@@ -1046,7 +1050,7 @@ li .nav__logo {
   letter-spacing: 0.025rem;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 820px) {
   .steps {
     height: 1500px;
     padding-top: 8rem;
@@ -1227,6 +1231,9 @@ footer {
   .home__title {
     font-size: 52px;
   }
+  h2 {
+    font-size: 44px;
+  }
   p {
     font-size: 16px;
     font-weight: 500;
@@ -1357,9 +1364,6 @@ footer {
   .home__buttons .work__btn {
     margin-top: 0;
     margin-left: 1.5rem;
-  }
-  h2 {
-    font-size: 30px;
   }
   .home__container .home__description {
     font-size: 20px;

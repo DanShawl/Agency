@@ -872,7 +872,9 @@ li .nav__logo {
 .steps {
   padding-top: 3rem;
 }
-
+.steps__title {
+  margin-top: 2rem;
+}
 .steps__info {
   h2 {
     margin-bottom: 1rem;
@@ -969,7 +971,7 @@ li .nav__logo {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 820px) {
   .steps {
     height: 1500px;
     padding-top: 8rem;
@@ -1109,6 +1111,9 @@ footer {
   .home__title {
     font-size: 52px;
   }
+  h2 {
+    font-size: 44px;
+  }
 
   p {
     font-size: 16px;
@@ -1243,7 +1248,7 @@ footer {
   }
   h2 {
     // font-size: 26px;
-    font-size: 30px;
+    // font-size: 30px;
   }
 
   .home__container {
